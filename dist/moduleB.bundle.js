@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebpack_demo=self.webpackChunkwebpack_demo||[]).push([[111],{890:(e,o,l)=>{function u(){console.log("Hello from Module B!")}l.d(o,{Y:()=>u}),console.log("Module B loaded"),document.getElementById("output").innerHTML+="Hello from Module B!<br/>"}}]);

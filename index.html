@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Webpack Code Splitting Example</title>
+</head>
+<body>
+  <h1>Webpack Code Splitting</h1>
+  <button id="loadMain">Load Main</button>
+  <button id="loadModuleA">Load Module A</button>
+  <button id="loadModuleB">Load Module B</button>
+  <p id="output"></p>
+
+  <script>
+    function loadModule(moduleName) {
+      const script = document.createElement('script');
+      script.src = `dist/${moduleName}.bundle.js`;
+      script.async = true;
+      document.head.appendChild(script);
+    }
+
+    document.getElementById('loadMain').addEventListener('click', () => {
+      loadModule('main');
+    });
+
+    document.getElementById('loadModuleA').addEventListener('click', () => {
+      loadModule('moduleA');
+    });
+
+    document.getElementById('loadModuleB').addEventListener('click', () => {
+      loadModule('moduleB');
+    });
+  </script>
+</body>
+
+</html>
