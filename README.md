@@ -70,6 +70,9 @@ function loadModule(moduleName) {
 
 ## Running the Demo
 
+> [!Note]  
+> The JavaScript bundles are already pre-built in the `dist` directory, so you can run **Live Server** directly without additional setup. However, if you plan to modify the code and rebuild the bundles, follow the steps below.
+
 1. Install dependencies:
    ```
    npm install
